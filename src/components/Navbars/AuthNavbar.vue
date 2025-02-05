@@ -1,6 +1,7 @@
 <template>
   <nav
     class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg"
+    :class="navbarClass"
   >
     <div
       class="container px-4 mx-auto flex flex-wrap items-center justify-between"
@@ -12,7 +13,7 @@
           class="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
           to="/"
         >
-          Vue Notus
+          One file Solutions
         </router-link>
         <button
           class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -27,23 +28,47 @@
         :class="[navbarOpen ? 'block rounded shadow-lg' : 'hidden']"
         id="example-navbar-warning"
       >
-        <ul class="flex flex-col lg:flex-row list-none mr-auto">
+        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
           <li class="flex items-center">
             <a
               class="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-auth-navbar"
+              href="#services"
             >
-              <i
-                class="lg:text-blueGray-200 text-blueGray-400 far fa-file-alt text-lg leading-lg mr-2"
-              />
-              Docs
+              Services
             </a>
           </li>
-        </ul>
-        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
           <li class="flex items-center">
-            <PagesDropdown />
+            <a
+              class="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="#about-us"
+            >
+              About Us
+            </a>
           </li>
+          <li class="flex items-center">
+            <a
+              class="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="#hero"
+            >
+              Team
+            </a> 
+          </li> 
+          <li class="flex items-center">
+            <a
+              class="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="#vision"
+            >
+              Vision
+            </a> 
+          </li> 
+          <li class="flex items-center">
+            <a
+              class="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="#contact-us"
+            >
+              Contact us
+            </a> 
+          </li> 
           <li class="flex items-center">
             <a
               class="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
@@ -84,33 +109,36 @@
           </li>
 
           <li class="flex items-center">
-            <button
+            <a
+              href="#contact-us"
               class="bg-white text-blueGray-700 active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-              type="button"
             >
-              <i class="fas fa-arrow-alt-circle-down"></i> Download
-            </button>
+              <i class="fas fa-arrow-alt-circle-down"></i> Contact us
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 </template>
+
 <script>
-import PagesDropdown from "@/components/Dropdowns/PagesDropdown.vue";
 export default {
   data() {
     return {
       navbarOpen: false,
+      navbarClass: "",
     };
   },
   methods: {
-    setNavbarOpen: function () {
+    setNavbarOpen() {
       this.navbarOpen = !this.navbarOpen;
     },
-  },
-  components: {
-    PagesDropdown,
-  },
+ 
+  }, 
 };
 </script>
+
+<style scoped>
+/* Add any additional styling for the navbar if needed */
+</style>

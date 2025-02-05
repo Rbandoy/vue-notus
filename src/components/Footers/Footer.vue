@@ -22,9 +22,9 @@
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap text-center lg:text-left">
         <div class="w-full lg:w-6/12 px-4">
-          <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+          <h4 class="text-3xl font-semibold">Stay Connected!</h4>
           <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
-            Find us on any of these platforms, we respond 1-2 business days.
+            Reach out to us on any of these platforms, and we'll get back to you within 1-2 business days.
           </h5>
           <div class="mt-6 lg:mb-0 mb-6">
             <button
@@ -65,7 +65,7 @@
                 <li>
                   <a
                     class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                    href="https://www.creative-tim.com/presentation?ref=vn-footer"
+                    href="#about-us"
                   >
                     About Us
                   </a>
@@ -73,27 +73,11 @@
                 <li>
                   <a
                     class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                    href="https://blog.creative-tim.com?ref=vn-footer"
+                    href="#services"
                   >
-                    Blog
+                    Services
                   </a>
-                </li>
-                <li>
-                  <a
-                    class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                    href="https://www.github.com/creativetimofficial?ref=vn-footer"
-                  >
-                    Github
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                    href="https://www.creative-tim.com/bootstrap-themes/free?ref=vn-footer"
-                  >
-                    Free Products
-                  </a>
-                </li>
+                </li> 
               </ul>
             </div>
             <div class="w-full lg:w-4/12 px-4">
@@ -146,18 +130,18 @@
       >
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
           <div class="text-sm text-blueGray-500 font-semibold py-1">
-            Copyright © {{ date }} Vue Notus by
+            Copyright © {{ date }} One File Solutions
             <a
               href="https://www.creative-tim.com?ref=vn-footer"
               class="text-blueGray-500 hover:text-blueGray-800"
             >
-              Creative Tim
+               
             </a>
             .
           </div>
         </div>
       </div>
-    </div>
+    </div> 
   </footer>
 </template>
 <script>
